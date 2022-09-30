@@ -5,7 +5,7 @@ export default {
   fetch: req => {
     const headers = Object.fromEntries(req.headers)
     const ctx = JSON.parse(headers['ctx-do'])
-    json(ctx)
+    return json(ctx)
   }
 }
 
